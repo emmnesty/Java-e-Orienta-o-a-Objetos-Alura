@@ -10,7 +10,6 @@ public class Tabuada {
 				int tabuada = j * i;
 
 				System.out.print(tabuada + " ");
-
 			}
 			System.out.println();
 
