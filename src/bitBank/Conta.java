@@ -4,7 +4,7 @@ public class Conta {
 	int agencia;
 	int conta;
 	double saldo;
-	String nome;
+	Cliente titular;
 
 	public void depositar(double valor) {
 		this.saldo += valor;
