@@ -1,3 +1,4 @@
+package exerciciosBasico;
 
 public class Fatorial {
 	
