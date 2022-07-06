@@ -5,4 +5,9 @@ public class Conta {
 	 int conta;
 	 double saldo;
 	 String nome;
+	 
+	 public void depositar (int valor) {
+		 this.saldo = this.saldo + valor;
+		 
+	 }
 }
