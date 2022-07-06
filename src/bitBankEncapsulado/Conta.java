@@ -5,11 +5,13 @@ public class Conta {
 	private int conta;
 	private double saldo;
 	private Cliente titular;
-	
-	public Conta (int agencia, int conta) {
+	private static int totalDeContas;
+
+	public Conta(int agencia, int conta) {
+		totalDeContas++;
 		this.agencia = agencia;
 		this.conta = conta;
-		
+
 	}
 
 	public void depositar(double valor) {
@@ -54,13 +56,17 @@ public class Conta {
 	public int getConta() {
 		return this.conta;
 	}
-	
+
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
-	
+
 	public Cliente getTitular() {
 		return titular;
+	}
+
+	public static int getTotal() {
+		return Conta.totalDeContas;
 	}
 
 }
