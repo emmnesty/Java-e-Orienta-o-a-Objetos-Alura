@@ -3,7 +3,7 @@ package bitBank;
 public class Conta {
 	int agencia;
 	int conta;
-	double saldo;
+	private double saldo;
 	Cliente titular;
 
 	public void depositar(double valor) {
@@ -18,7 +18,7 @@ public class Conta {
 		}
 		return false;
 	}
-	
+
 	public boolean transferir(double valor, Conta destino) {
 		if (this.saldo >= valor) {
 			this.sacar(valor);
@@ -26,5 +26,9 @@ public class Conta {
 			return true;
 		}
 		return false;
+	}
+
+	public double mostrarSaldo() {
+		return this.saldo;
 	}
 }

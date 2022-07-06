@@ -7,15 +7,14 @@ public class TesteAtributo {
 		Conta contaDoJhonatan = new Conta();
 		Conta contaDaAna = new Conta();
 
-		contaDoJhonatan.saldo = 100;
 		contaDoJhonatan.depositar(1000);
 
 		//contaDoJhonatan.sacar(30);
 
-		System.out.println("Conta da Jhonatan: " + contaDoJhonatan.saldo);
+		System.out.println("Conta da Jhonatan: " + contaDoJhonatan.mostrarSaldo());
 		
 		//contaDaAna.depositar(2000);
-		System.out.println("Conta da Ana: " + contaDaAna.saldo);
+		System.out.println("Conta da Ana: " + contaDaAna.mostrarSaldo());
 		
 		
 		boolean transferencia = contaDoJhonatan.transferir(200, contaDaAna);
@@ -26,7 +25,7 @@ public class TesteAtributo {
 			System.out.println("Não há saldo suficiente!");
 		}
 		
-		System.out.println("Conta da Ana: " + contaDaAna.saldo);
+		System.out.println("Conta da Ana: " + contaDaAna.mostrarSaldo());
 		
 
 	}

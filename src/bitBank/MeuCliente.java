@@ -5,7 +5,6 @@ public class MeuCliente {
 		Cliente clienteJhonatan = new Cliente();
 		Conta contaDoJhonatan = new Conta();
 		
-		contaDoJhonatan.saldo = 1000;
 		
 		clienteJhonatan.nome = "Jhonatan Maciel";
 		clienteJhonatan.cpf = "222.222.222-22";
@@ -21,17 +20,14 @@ public class MeuCliente {
 		// Outra forma de fazer:
 		Cliente clienteAna = new Cliente();
 		Conta contaDaAna = new Conta();
-		
-		contaDaAna.saldo = 500;
+	
 		
 		contaDaAna.titular = new Cliente();
 		
 		clienteAna.nome = "Ana Silva";
 		
 		System.out.println("Nome do Titular: " + clienteAna.nome);
-		System.out.println("Saldo: " + contaDaAna.saldo);
-		
-		
+		System.out.println("Saldo: " + contaDaAna.mostrarSaldo());		
 		
 		
 	}
