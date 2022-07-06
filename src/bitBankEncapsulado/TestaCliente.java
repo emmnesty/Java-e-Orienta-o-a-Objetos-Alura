@@ -2,14 +2,14 @@ package bitBankEncapsulado;
 
 public class TestaCliente {
 	public static void main(String[] args) {
-		Conta conta = new Conta();
+		Conta conta = new Conta(1234, 222222);
 		Cliente cliente = new Cliente();
 
-		conta.setAgencia(123);
+		//conta.setAgencia(123);
 
 		System.out.println("Minha agência: " + conta.getAgencia());
 
-		conta.setConta(1001);
+		//conta.setConta(1001);
 
 		System.out.println("Minha conta: " + conta.getConta());
 		
