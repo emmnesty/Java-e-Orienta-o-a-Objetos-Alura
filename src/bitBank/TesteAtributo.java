@@ -10,6 +10,10 @@ public class TesteAtributo {
 		contaDoJhonatan.depositar(50);
 		
 		System.out.println(contaDoJhonatan.saldo);
+		
+		contaDoJhonatan.sacar(110);
+		
+		System.out.println(contaDoJhonatan.saldo);
 
 	}
 
